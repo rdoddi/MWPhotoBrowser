@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.author = 'Ramesh'
     s.source = {
         :git => 'https://github.com/rdoddi/MWPhotoBrowser.git',
-        :tag => 'r#{s.version}'
+        :tag => 'r1.0.0'
     }
     s.platform = :ios, '5.1.1'
     s.source_files = 'MWPhotoBrowser/Classes/*.{h,m}'
