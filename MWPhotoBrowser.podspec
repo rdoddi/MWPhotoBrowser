@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                     'height-fit images with horizontal scrolling.' \
                     'Refer to MWPhotoBrowser:preferredMinScaleUsingXScale for more details.'
     s.homepage = 'https://github.com/rdoddi/MWPhotoBrowser'
-    s.author = { 'Ramesh' => 'rdoddi@gmail.com' }
+    s.author = 'Ramesh'
     s.source = {
         :git => 'https://github.com/rdoddi/MWPhotoBrowser.git',
         :tag => s.version.to_s
