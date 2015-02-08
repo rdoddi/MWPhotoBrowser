@@ -255,7 +255,7 @@
         maxScale = 4;
     }
     
-    // {{ Customization - rdoddi
+    // {{ Customization - ramesh
     minScale = [_photoBrowser preferredMinScaleUsingXScale:xScale yScale:yScale];
     // }}
     
