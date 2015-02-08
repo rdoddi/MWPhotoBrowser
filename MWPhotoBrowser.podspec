@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name = 'MWPhotoBrowser'
+    s.name = 'MWPhotoBrowser@ramesh'
     s.version = '1.0.0'
     s.license = 'MIT'
     s.summary = 'Photo browser based on v1.4.1 of MWPhotoBrowser.'
