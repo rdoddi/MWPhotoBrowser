@@ -68,4 +68,13 @@
 - (void)showNextPhotoAnimated:(BOOL)animated;
 - (void)showPreviousPhotoAnimated:(BOOL)animated;
 
+// {{ Customization - rdoddi
+// Some images like long documents may need to be displayed width first or height first.
+// Override and return minScale as below
+//      1. minScale = xScale -> will fit the image width wise and allows vertical panning.
+//      2. minScale = yScale -> will fit the image height wise and allows horizontal panning.
+//      3. [super preferredMinScaleUsingXScale] for default logic as defined in MWPhotoBrowser.
+- (CGFloat)preferredMinScaleUsingXScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+// }}
+
 @end

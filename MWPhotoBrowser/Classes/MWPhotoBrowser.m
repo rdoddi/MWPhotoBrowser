@@ -1662,4 +1662,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// {{ Customization - rdoddi
+- (CGFloat)preferredMinScaleUsingXScale:(CGFloat)xScale yScale:(CGFloat)yScale {
+    return MIN(xScale, yScale);
+}
+// }}
+
 @end

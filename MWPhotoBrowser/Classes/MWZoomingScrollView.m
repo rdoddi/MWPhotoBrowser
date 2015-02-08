@@ -255,6 +255,10 @@
         maxScale = 4;
     }
     
+    // {{ Customization - rdoddi
+    minScale = [_photoBrowser preferredMinScaleUsingXScale:xScale yScale:yScale];
+    // }}
+    
     // Image is smaller than screen so no zooming!
 	if (xScale >= 1 && yScale >= 1) {
 		minScale = 1.0;
