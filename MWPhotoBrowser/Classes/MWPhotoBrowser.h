@@ -37,6 +37,15 @@
 - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index selectedChanged:(BOOL)selected;
 - (void)photoBrowserDidFinishModalPresentation:(MWPhotoBrowser *)photoBrowser;
 
+// {{{ MWPhotoBrowser+ (ramesh)
+// Some images like long documents may need to be displayed width first or height first.
+// Override and return minScale as below
+//      1. minScale = xScale -> will fit the image width wise and allows vertical panning.
+//      2. minScale = yScale -> will fit the image height wise and allows horizontal panning.
+//      3. minScale = MIN(xScale, yScale) for default logic as defined in MWPhotoBrowser.
+- (CGFloat)preferredMinScaleUsingXScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+// }}}
+
 @end
 
 @interface MWPhotoBrowser : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
@@ -67,21 +76,5 @@
 // Navigation
 - (void)showNextPhotoAnimated:(BOOL)animated;
 - (void)showPreviousPhotoAnimated:(BOOL)animated;
-
-// {{ Customization - ramesh
-
-// if edit controls are enabled, then it will add "Edit" button and will callback editButtonTapped.
-@property (nonatomic) BOOL showsEditControls;
-
-- (void)photoBrowserEditButtonTapped;
-
-// Some images like long documents may need to be displayed width first or height first.
-// Override and return minScale as below
-//      1. minScale = xScale -> will fit the image width wise and allows vertical panning.
-//      2. minScale = yScale -> will fit the image height wise and allows horizontal panning.
-//      3. [super preferredMinScaleUsingXScale] for default logic as defined in MWPhotoBrowser.
-- (CGFloat)preferredMinScaleUsingXScale:(CGFloat)xScale yScale:(CGFloat)yScale;
-
-// }}
 
 @end

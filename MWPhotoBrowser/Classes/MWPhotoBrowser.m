@@ -188,15 +188,6 @@
         _actionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)];
     }
     
-    // Customization - ramesh
-    if (_showsEditControls) {
-        _editButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Edit", nil)
-                                                           style:UIBarButtonItemStylePlain
-                                                          target:self
-                                                          action:@selector(photoBrowserEditButtonTapped)];
-    }
-    // }}
-    
     // Update
     [self reloadData];
     
@@ -282,11 +273,6 @@
     } else {
         [items addObject:flexSpace];
     }
-    
-    // {{ Customization - ramesh
-    [items addObject:_editButtonItem];
-    [items addObject:flexSpace];
-    // }}
 
     // Right - Action
     if (_actionButton && !(!hasItems && !self.navigationItem.rightBarButtonItem)) {
@@ -1675,17 +1661,5 @@
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-// {{ Customization - ramesh
-
-- (void)photoBrowserEditButtonTapped {
-    NSAssert(YES, @"Client application must override this method and handle edit action !");
-}
-
-- (CGFloat)preferredMinScaleUsingXScale:(CGFloat)xScale yScale:(CGFloat)yScale {
-    return MIN(xScale, yScale);
-}
-
-// }}
 
 @end

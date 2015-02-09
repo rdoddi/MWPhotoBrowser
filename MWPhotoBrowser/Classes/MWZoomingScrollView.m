@@ -255,9 +255,11 @@
         maxScale = 4;
     }
     
-    // {{ Customization - ramesh
-    minScale = [_photoBrowser preferredMinScaleUsingXScale:xScale yScale:yScale];
-    // }}
+    // {{{ MWPhotoBrowser+ (ramesh)
+    if ([_photoBrowser.delegate respondsToSelector:@selector(preferredMinScaleUsingXScale:yScale:)] ) {
+        minScale = [_photoBrowser.delegate preferredMinScaleUsingXScale:xScale yScale:yScale];
+    }
+    // }}}
     
     // Image is smaller than screen so no zooming!
 	if (xScale >= 1 && yScale >= 1) {

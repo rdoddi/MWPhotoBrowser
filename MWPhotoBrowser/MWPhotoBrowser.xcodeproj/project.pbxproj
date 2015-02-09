@@ -97,6 +97,8 @@
 		4C6F96F714AF710800F8389A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96F514AF710800F8389A /* MBProgressHUD.m */; };
 		4C6F97C714AF74E200F8389A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F97C614AF74E200F8389A /* MessageUI.framework */; };
 		4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */; };
+		E86628D51A87FC36008E1169 /* MWPhotoBrowserPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = E86628D31A87FC36008E1169 /* MWPhotoBrowserPlus.h */; };
+		E86628D61A87FC36008E1169 /* MWPhotoBrowserPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = E86628D41A87FC36008E1169 /* MWPhotoBrowserPlus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +195,8 @@
 		4C6F96F514AF710800F8389A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
 		4C6F97C614AF74E200F8389A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhotoProtocol.h; path = Classes/MWPhotoProtocol.h; sourceTree = SOURCE_ROOT; };
+		E86628D31A87FC36008E1169 /* MWPhotoBrowserPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowserPlus.h; path = Classes/MWPhotoBrowserPlus.h; sourceTree = SOURCE_ROOT; };
+		E86628D41A87FC36008E1169 /* MWPhotoBrowserPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWPhotoBrowserPlus.m; path = Classes/MWPhotoBrowserPlus.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +300,8 @@
 				4C6F96DA14AF70BD00F8389A /* MWPhotoBrowser.h */,
 				0E3D58D818047D0B0000E3A0 /* MWPhotoBrowserPrivate.h */,
 				4C6F96DB14AF70BD00F8389A /* MWPhotoBrowser.m */,
+				E86628D31A87FC36008E1169 /* MWPhotoBrowserPlus.h */,
+				E86628D41A87FC36008E1169 /* MWPhotoBrowserPlus.m */,
 				0E3D5897180467550000E3A0 /* MWGridViewController.h */,
 				0E3D5898180467550000E3A0 /* MWGridViewController.m */,
 				4C6F96D814AF70BD00F8389A /* MWPhoto.h */,
@@ -417,6 +423,7 @@
 				4C6F96E414AF70BD00F8389A /* MWPhoto.h in Headers */,
 				4C6F96E614AF70BD00F8389A /* MWPhotoBrowser.h in Headers */,
 				0E3D58CC180474330000E3A0 /* PSTGridLayoutInfo.h in Headers */,
+				E86628D51A87FC36008E1169 /* MWPhotoBrowserPlus.h in Headers */,
 				2615E44F18CD57E500447857 /* MKAnnotationView+WebCache.h in Headers */,
 				0E17D76A17FAEADE0094ABF6 /* SDWebImageDecoder.h in Headers */,
 				0E17D77917FAEADE0094ABF6 /* UIImage+MultiFormat.h in Headers */,
@@ -536,6 +543,7 @@
 				0E3D58C4180474330000E3A0 /* PSTCollectionViewFlowLayout.m in Sources */,
 				2615E44C18CD57C700447857 /* NSData+ImageContentType.m in Sources */,
 				0E3D58BD180474330000E3A0 /* PSTCollectionViewCell.m in Sources */,
+				E86628D61A87FC36008E1169 /* MWPhotoBrowserPlus.m in Sources */,
 				0E8515C217FC77D200FE1EF3 /* DACircularProgressView.m in Sources */,
 				0E17D76717FAEADE0094ABF6 /* SDImageCache.m in Sources */,
 			);
